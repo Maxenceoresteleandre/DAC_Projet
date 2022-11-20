@@ -48,8 +48,8 @@ traitement_Abox1([(CA,CG)|L],[(CA,NF)|L1]):-prolonge(CG,CG1),nnf(CG1,NF),traitem
 traitement_Abox2([],[]).
 traitement_Abox2([(CA,CB,CD)|L],[(CA,CB,NF)|L1]):-prolonge(CD,CD1),nnf(CG1,NF),traitement_Abox2(L,L1).
 traitement_Abox(L1,L2,LL1,LL2):-traitement_Abox1(L1,LL1),traitement_Abox2(L2,LL2).
-/*
 
+/*
 % Pour la Tbox
 verif_Equiv(CA, CG) :- verif_Concept(CA), verif_Concept(CG),!.
 verif_Tbox([(CA, CG) | Q]) :- 
